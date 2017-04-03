@@ -1,0 +1,31 @@
+<div class="" [@routerTransition]>
+	<div class="row header col-md-12 header">
+		<h1 id="eventHeading" class="row col-md-5 ">Upcoming Events </h1>
+	</div>
+
+	<div class="eventContainer col-md-5 ">
+		<div class="form-group">
+			<h2 class="fa fa-calendar-plus-o">Enter details of event</h2>
+			<div>
+				<label for="exampleInputEmail1">Title</label>
+				<input class="form-control" placeholder="Enter title of Event" [(ngModel)]="name">
+			</div>
+			<div>
+				<label for="DataOfEvent">Date of Event</label>
+				<textarea class="form-control" id="dateOfEvent" rows="1"></textarea>
+			</div>
+			<div>
+				<label for="loaction">Location</label>
+				<textarea class="form-control" id="locationArea" rows="1"></textarea>
+			</div>
+			<div>
+				<label for="description">Description</label>
+				<textarea class="form-control" id="descriptionArea" rows="4"></textarea>
+			</div>
+			<button type="submit" class="btn btn-success" (click)="submit()">Submit</button>
+
+		</div>
+	</div>
+
+
+</div>

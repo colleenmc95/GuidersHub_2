@@ -1,13 +1,16 @@
-﻿using Abp.Domain.Repositories;
+﻿using Abp.Authorization;
+using Abp.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UUJ.GuidersHub.Authorization;
 
 namespace UUJ.GuidersHub.Events
 {
-    public class EventService : IEventService
+    [AbpAuthorize(PermissionNames.Pages_Users)]
+    public class EventService : GuidersHubAppServiceBase, IEventService
     {
         private IRepository<Event> _eventRepository;
 
@@ -17,7 +20,7 @@ namespace UUJ.GuidersHub.Events
             _eventRepository = eventRepository;
         }
 
-        public Event CreateEvent(EventDto newEvent)
+        public Event CreateEvent(Event newEvent)
         {
             Event testEvent = new Event()
             {

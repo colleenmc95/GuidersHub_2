@@ -1,0 +1,28 @@
+
+  <div class="background">
+    <div class="row eventContainer col-md-5" [routerLink]="['/app/event-details']">
+        <div class="calendarImage">
+            <time datetime="2017-12-20" class="icon">
+                <em>Saturday</em>
+                <strong>December</strong>
+                <span>20</span>
+            </time>
+        </div>
+        <div class="eventItem">
+            <div class="eventTitle">
+                <h4>Christmas Party</h4>
+            </div>
+            <div class="eventDetails" id="eventLocation">
+                <p>Location</p>
+            </div>
+            <div class="eventDetails" id="eventDate">
+                <p>20/12/17</p>
+            </div>
+            <div class="eventDetails" id="eventDescription">
+                <p>Guides annual christmas party. Bring sweets!</p>
+            </div>
+        </div>
+
+    </div>
+    	<button type="button" class="btn btn-success col-md-offset-s " [routerLink]="['/app/create-event']"  >Create Event</button> 
+</div>

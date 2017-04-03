@@ -9,7 +9,7 @@ namespace UUJ.GuidersHub.Events
 {
     interface IEventService : IApplicationService 
     {
-        Event CreateEvent(EventDto newEvent);
+        Event CreateEvent(Event newEvent);
         Event DeleteEvent (EventDto eventDelete);
         Event UpdateEvent (EventDto eventUpdate); 
         Event GetEventByID (int Id);
