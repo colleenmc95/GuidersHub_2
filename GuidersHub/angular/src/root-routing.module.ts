@@ -1,6 +1,6 @@
 ﻿import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {EventComponent}from 'app/event/event.component';
+//import {EventComponent}from '@app/event/create-event/event.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/app/home', pathMatch: 'full' },

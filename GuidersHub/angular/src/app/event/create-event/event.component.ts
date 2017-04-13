@@ -6,7 +6,8 @@ import { EventServiceProxy } from '../services/event.service';
 
 @Component({
     templateUrl: './event.component.html',
-    animations: [appModuleAnimation()]
+    animations: [appModuleAnimation()],
+    styleUrls: ['./event.component.less']
 })
 export class CreateEventComponent extends AppComponentBase {
 
@@ -21,7 +22,7 @@ export class CreateEventComponent extends AppComponentBase {
 
     submit() {
         console.log(this.name);
-        this.name = "Fuck you guys"
+        this.name = "Testing"
 
         this.eventService.createEvent({
             "name": "string",

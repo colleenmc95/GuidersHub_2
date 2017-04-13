@@ -1,24 +1,31 @@
-<div class="row col-md-12 ">
-    <h1 id="eventHeading" class="col-md-offset-5 ">Event details </h1>
-</div>
-<div class="col-md-offset-5">
-    <div id="eventTitle">
-        <h4>Christmas Party</h4>
+<button class=" create-event-btn btn btn-success" [routerLink]="['/app/event-list']">
+    <i class="fa fa-arrow-left" aria-hidden="true">
+    </i>  Event List 
+</button>
+<div class="row col-md-12 centered eventContainer">
+    <div class="row col-md-12 ">
+        <h1 id="eventHeading" class="col-md-5 ">Event details
+            <i class="fa fa-calendar" aria-hidden="true"></i>    
+         </h1>
     </div>
-    <div id="eventLocation">
-        <p>Location</p>
+    <div class="eventDetails col-md-5 centered">
+        <div id="eventTitle">
+            <h4>Christmas Party</h4>
+        </div>
+        <div id="eventLocation">
+            <p>Location</p>
+        </div>
+        <div id="eventDate">
+            <p>20/12/17</p>
+        </div>
+        <div id="eventDescription">
+            <p>Guides annual christmas party. Bring sweets!</p>
+        </div>
+        <div id="numberAttending">
+            <label>Number attending: </label>
+            <p>100
+                <p>
+        </div>
+        <button type="submit" class="create-event-btn btn btn-success">Attend</button>
     </div>
-    <div id="eventDate">
-        <p>20/12/17</p>
-    </div>
-    <div id="eventDescription">
-        <p>Guides annual christmas party. Bring sweets!</p>
-    </div>
-    <div id="numberAttending">
-        <label>Number attending: </label>
-        <p>100
-            <p>
-    </div>
-    <button type="submit" class="btn btn-success">Attend</button>
-
 </div>

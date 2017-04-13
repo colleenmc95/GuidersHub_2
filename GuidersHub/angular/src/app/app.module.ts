@@ -25,6 +25,7 @@ import { CreateTenantModalComponent } from '@app/tenants/create-tenant-modal.com
 import { EventListComponent} from '@app/event/event-list/event.list.component';
 import { CreateEventComponent} from '@app/event/create-event/event.component';
 import { EventDetailsComponent} from '@app/event/event-details/event.details.component';
+import { NgxGalleryModule} from 'ngx-gallery';
 
 import { EventServiceProxy } from '@app/event/services/event.service';
 
@@ -51,7 +52,8 @@ import { EventServiceProxy } from '@app/event/services/event.service';
         AbpModule,
         AppRoutingModule,
         ServiceProxyModule,
-        SharedModule
+        SharedModule,
+        NgxGalleryModule
     ],
     providers: [
         EventServiceProxy

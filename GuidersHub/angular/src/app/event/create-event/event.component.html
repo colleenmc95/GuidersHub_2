@@ -1,31 +1,39 @@
 <div class="" [@routerTransition]>
-	<div class="row header col-md-12 header">
-		<h1 id="eventHeading" class="row col-md-5 ">Upcoming Events </h1>
-	</div>
-
-	<div class="eventContainer col-md-5 ">
-		<div class="form-group">
-			<h2 class="fa fa-calendar-plus-o">Enter details of event</h2>
-			<div>
-				<label for="exampleInputEmail1">Title</label>
-				<input class="form-control" placeholder="Enter title of Event" [(ngModel)]="name">
-			</div>
-			<div>
-				<label for="DataOfEvent">Date of Event</label>
-				<textarea class="form-control" id="dateOfEvent" rows="1"></textarea>
-			</div>
-			<div>
-				<label for="loaction">Location</label>
-				<textarea class="form-control" id="locationArea" rows="1"></textarea>
-			</div>
-			<div>
-				<label for="description">Description</label>
-				<textarea class="form-control" id="descriptionArea" rows="4"></textarea>
-			</div>
-			<button type="submit" class="btn btn-success" (click)="submit()">Submit</button>
-
+	<div class="row add_event_page col-md-12 centered">
+		<div class="description col-md-5 text">
+			<h1>Create an event form</h1>
+			<p>Create an event to share with your unit</p>
+			<button type="link" class="event_list btn btn-success" [routerLink]="['/app/event-list']">Event List</button>
 		</div>
-	</div>
+		<div class="eventContainer col-md-5 form-box ">
+			<div class=" form-group">
+				<div class="form-top-right">
+					<i id="calander-icon" class="fa fa-calendar-plus-o fa-4x"></i>
+				</div>
+				<h2 id="form-title">Enter details of event</h2>
+				<p>Fill in the form to post event to event page</p>
+				<div>
+					<hr>
+					<label for="title-of-event">Title</label>
+					<input class="form-control" placeholder="Enter title of Event" [(ngModel)]="name">
+				</div>
+				<div>
+					<label for="DataOfEvent">Date of Event</label>
+					<input type="date" class="form-control" placeholder="date" >
+				</div>
+				<div>
+					<label for="loaction">Location</label>
+					<textarea class="form-control" id="locationArea" rows="1"></textarea>
+				</div>
+				<div>
+					<label for="description">Description</label>
+					<textarea class="form-control" id="descriptionArea" rows="4"></textarea>
+				</div>
+				<button type="submit" class="submit_btn btn btn-success" (click)="submit()">Submit</button>
 
+			</div>
+		</div>
+
+	</div>
 
 </div>

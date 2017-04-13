@@ -4,7 +4,8 @@ import { appModuleAnimation } from '@shared/animations/routerTransition';
 
 @Component({
     templateUrl: './event.list.component.html',
-    animations: [appModuleAnimation()]
+    animations: [appModuleAnimation()],
+    styleUrls: ['./event.list.component.less']
 })
 export class EventListComponent extends AppComponentBase {
 
